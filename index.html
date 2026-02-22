@@ -3,141 +3,207 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kingsley Adigbolo | Property Management VA</title>
+<title>Kingsley Adigbolo | Property Operations VA</title>
 
 <style>
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #0f172a;
-    color: #e2e8f0;
+    background-color: #0b1120;
+    color: #e5e7eb;
 }
 
-header {
+/* HERO */
+.hero {
+    padding: 100px 20px;
     text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    background: linear-gradient(135deg, #0b1120, #111827);
 }
 
-header h1 {
-    font-size: 38px;
+.hero h1 {
+    font-size: 42px;
     margin: 0;
-    font-weight: 600;
 }
 
-header p {
-    margin-top: 15px;
+.hero p {
+    margin-top: 20px;
     font-size: 18px;
-    color: #94a3b8;
+    color: #9ca3af;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* KPI STRIP */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 20px;
+    background-color: #111827;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    margin: 0;
+    font-size: 28px;
+    color: #3b82f6;
+}
+
+.stat p {
+    margin-top: 5px;
+    color: #9ca3af;
+}
+
+/* SECTIONS */
 section {
-    padding: 70px 20px;
-    max-width: 1000px;
+    padding: 80px 20px;
+    max-width: 1100px;
     margin: auto;
 }
 
 h2 {
-    font-size: 26px;
-    margin-bottom: 20px;
-    border-left: 4px solid #3b82f6;
-    padding-left: 12px;
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
-p {
-    color: #cbd5e1;
-    line-height: 1.7;
+/* FEATURE GRID */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
-.module-list {
-    list-style: none;
-    padding: 0;
-}
-
-.module-list li {
-    background-color: #1e293b;
-    margin-bottom: 12px;
-    padding: 15px;
-    border-radius: 8px;
+.feature-box {
+    background-color: #111827;
+    padding: 25px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
-.module-list li:hover {
-    background-color: #334155;
+.feature-box:hover {
+    background-color: #1f2937;
 }
 
+.feature-box h3 {
+    margin-top: 0;
+    color: #3b82f6;
+}
+
+/* WORKFLOW */
 .workflow {
-    background-color: #1e293b;
-    padding: 25px;
-    border-radius: 8px;
-    font-weight: 500;
-    line-height: 1.6;
+    background-color: #111827;
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 1.8;
+    font-size: 16px;
 }
 
+/* PREVIEW */
 .preview img {
     width: 100%;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
 }
 
-.preview img:hover {
-    transform: scale(1.02);
-}
-
-.support-box {
-    background: linear-gradient(135deg, #1e293b, #111827);
-    padding: 40px;
+/* SUPPORT */
+.support {
+    background: linear-gradient(135deg, #111827, #0b1120);
+    padding: 50px;
     border-radius: 12px;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 30px 20px;
+    padding: 40px 20px;
     background-color: #020617;
-    color: #64748b;
-    font-size: 14px;
+    color: #6b7280;
 }
 </style>
 </head>
 
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
     <h1>Kingsley Adigbolo</h1>
-    <p>Property Management Virtual Assistant specializing in tenant communication, rent tracking, maintenance coordination, and operational reporting.</p>
-</header>
+    <p>
+        Property Management Virtual Assistant specializing in tenant communication,
+        rent tracking, maintenance coordination, and structured operational reporting.
+    </p>
+</div>
 
+<!-- KPI STRIP -->
+<div class="stats">
+    <div class="stat">
+        <h3>5+</h3>
+        <p>System Modules</p>
+    </div>
+    <div class="stat">
+        <h3>100%</h3>
+        <p>Structured Tracking</p>
+    </div>
+    <div class="stat">
+        <h3>0</h3>
+        <p>Missed Follow-Ups</p>
+    </div>
+</div>
+
+<!-- ABOUT -->
 <section>
-    <h2>About This System</h2>
+    <h2>About This Operations System</h2>
     <p>
         This Property Management Operations System demonstrates structured tenant tracking,
-        rent monitoring, maintenance coordination, vendor management, and reporting
-        for landlords and property managers.
+        rent monitoring, maintenance coordination, vendor management, vacancy tracking,
+        and landlord reporting built to support growing rental portfolios.
     </p>
 </section>
 
+<!-- FEATURES -->
 <section>
     <h2>System Modules</h2>
-    <ul class="module-list">
-        <li>Tenant Database Management</li>
-        <li>Rent Payment Tracking</li>
-        <li>Maintenance Request Coordination</li>
-        <li>Vendor Management System</li>
-        <li>Vacancy Tracker</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Operational Workflow</h2>
-    <div class="workflow">
-        Tenant submits request → Issue logged → Vendor assigned → Repair completed → Report updated → Landlord notified.
+    <div class="features">
+        <div class="feature-box">
+            <h3>Tenant Database</h3>
+            <p>Centralized lease tracking, tenant records, and payment status monitoring.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Rent Tracking</h3>
+            <p>Clear visibility into payments, balances, late fees, and reporting.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Maintenance Coordination</h3>
+            <p>Structured issue logging, vendor assignment, and completion tracking.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Vendor Directory</h3>
+            <p>Organized contractor records with service categories and cost ranges.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Vacancy Monitoring</h3>
+            <p>Clear tracking of available units and turnover workflow.</p>
+        </div>
     </div>
 </section>
 
+<!-- WORKFLOW -->
+<section>
+    <h2>Operational Workflow</h2>
+    <div class="workflow">
+        Tenant submits request → Issue logged → Vendor assigned → Repair completed → 
+        System updated → Landlord notified.
+    </div>
+</section>
+
+<!-- PREVIEW -->
 <section class="preview">
-    <h2>System Preview</h2>
+    <h2>System Dashboard Preview</h2>
 
     <img src="maintenance-log.png" alt="Maintenance Log">
     <img src="rent-tracker.png" alt="Rent Tracker">
@@ -146,13 +212,15 @@ footer {
 
 </section>
 
+<!-- SUPPORT -->
 <section>
     <h2>Operational Support for Growing Portfolios</h2>
-    <div class="support-box">
+    <div class="support">
         <p>
-            If you're managing multiple rental units and need structured backend systems 
-            to reduce missed payments, eliminate communication gaps, and prevent delayed repairs,
-            I provide organized operational support that keeps your portfolio running efficiently.
+            If you're managing multiple rental units and need structured backend systems
+            to reduce missed payments, eliminate delayed repairs, and maintain full visibility
+            across your portfolio, I provide reliable operational support that keeps
+            everything organized and accountable.
         </p>
     </div>
 </section>
