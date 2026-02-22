@@ -8,69 +8,95 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
 }
 
 header {
-    background-color: #0a1f44;
-    color: white;
-    padding: 40px 20px;
     text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
 }
 
 header h1 {
+    font-size: 38px;
     margin: 0;
-    font-size: 32px;
+    font-weight: 600;
 }
 
 header p {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 18px;
+    color: #94a3b8;
 }
 
 section {
-    padding: 40px 20px;
+    padding: 70px 20px;
     max-width: 1000px;
     margin: auto;
 }
 
 h2 {
-    color: #0a1f44;
-    margin-bottom: 15px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-left: 4px solid #3b82f6;
+    padding-left: 12px;
+}
+
+p {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.module-list {
+    list-style: none;
+    padding: 0;
 }
 
 .module-list li {
-    margin-bottom: 8px;
+    background-color: #1e293b;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.module-list li:hover {
+    background-color: #334155;
 }
 
 .workflow {
-    background-color: #e9eef5;
-    padding: 20px;
-    border-left: 5px solid #0a1f44;
-    font-weight: bold;
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 8px;
+    font-weight: 500;
+    line-height: 1.6;
 }
 
 .preview img {
     width: 100%;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
 }
 
-.cta {
-    background-color: #0a1f44;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
+.preview img:hover {
+    transform: scale(1.02);
+}
+
+.support-box {
+    background: linear-gradient(135deg, #1e293b, #111827);
+    padding: 40px;
+    border-radius: 12px;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #111;
-    color: white;
+    padding: 30px 20px;
+    background-color: #020617;
+    color: #64748b;
     font-size: 14px;
 }
 </style>
@@ -122,10 +148,13 @@ footer {
 
 <section>
     <h2>Operational Support for Growing Portfolios</h2>
-    <p>
-        If you're managing multiple rental units and need structured backend systems
-        to reduce missed payments and delayed repairs, I can help.
-    </p>
+    <div class="support-box">
+        <p>
+            If you're managing multiple rental units and need structured backend systems 
+            to reduce missed payments, eliminate communication gaps, and prevent delayed repairs,
+            I provide organized operational support that keeps your portfolio running efficiently.
+        </p>
+    </div>
 </section>
 
 <footer>
